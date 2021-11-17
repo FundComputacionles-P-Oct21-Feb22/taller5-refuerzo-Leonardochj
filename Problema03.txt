@@ -1,0 +1,37 @@
+En un comercial de venta de llantas de vehículos de la ciudad de Loja, se hace un descuento del 10% si el cliente tiene pide un juego de llantas para un vehículo tipo "auto", del 20% si el cliente pide un juego de llantas para un vehículo tipo "camioneta", del 30% el cliente pide un juego de llantas para un vehículo tipo "bus". 
+Elaborar un solución que pida como datos de entrada el tipo de vehículo y el valor del juego de llantas y el número de juegos de llantas para el vehículo. Y luego calcule e imprima el subtotal por pagar y el total por pagar.
+
+1) Inicio
+2) tipoVehiculo d[0, n]
+3) valorJuegoLlantas d[0, n]
+4) numeroJuegoLlantas d[0, n]
+5) valorTotal d[0, n]
+6) subTotal d[0, n]
+7) porcentaje d[0, n]
+8) porcentaje1 <-- 10
+9) porcentaje2 <-- 20
+10)porcentaje3 <-- 30
+
+11) Escribir "Ingresar el tipo de vehiculo"
+   Lea tipoVehiculo
+12) Escribir "Ingresar el valor del juego de llantas"
+   Lea valorJuegoLlantas
+13) Escribir "Ingresar el numero de juego de llantas"
+   Lea numeroJuegoLlantas
+14)Escribir "Ingresar el valor del subtotal"
+   Lea subTotal
+
+15)Si tipoVehiculo <-- auto
+16)descuento1 <-- (porcentaje1 * subTotal)/100
+17)valorTotal1 <-- subTotal - descuento1
+
+18)Si tipoVehiculo <-- camioneta
+19)descuento2 <-- (porcentaje2 * subTotal)/100
+20)valorTotal2 <-- subTotal - descuento2
+
+21)Si tipovehiculo <-- bus
+22)descuento3 <-- (porcentaje3 * subTotal)/100
+23)valorTotal3 <-- subTotal - descuento3
+
+24)Escribir "El valor total es:" + valorTotal1 + valorTotal2 + valorTotal3 + valorJuegoLlantas + numeroJuegoLlantas
+25)Fin
